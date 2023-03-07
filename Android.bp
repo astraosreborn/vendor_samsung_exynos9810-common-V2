@@ -280,6 +280,31 @@ cc_prebuilt_library_shared {
 
 // OPENMAX END
 
+// CAMERA START
+
+cc_prebuilt_library_shared {
+	name: "libhwjpeg.exynos9810",
+	stem: "libhwjpeg",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libhwjpeg.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libhwjpeg.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+// CAMERA END
+
 cc_prebuilt_library_shared {
 	name: "camera.device@1.0-impl.exynos9810",
 	stem: "camera.device@1.0-impl",

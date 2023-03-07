@@ -93,6 +93,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/snap_gpu_kernel_64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/snap_gpu_kernel_64.bin \
     vendor/samsung/exynos9810-common/proprietary/vendor/openvx/xml/_hifi_still_schedule.xml:$(TARGET_COPY_OUT_VENDOR)/openvx/xml/_hifi_still_schedule.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    libhwjpeg.exynos9810
+
 # OpenMAX
 PRODUCT_PACKAGES += \
     libExynosOMX_Core \
