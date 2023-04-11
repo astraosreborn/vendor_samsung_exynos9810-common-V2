@@ -31,7 +31,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9810-common/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000045.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000045.drbin \
     vendor/samsung/exynos9810-common/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000062.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000062.tlbin \
     vendor/samsung/exynos9810-common/proprietary/vendor/app/mcRegistry/fffffffff0000000000000000000001b.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/fffffffff0000000000000000000001b.tlbin \
-    vendor/samsung/exynos9810-common/proprietary/vendor/etc/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/gnss/gps.cer:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cer \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/gnss/gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml \
@@ -50,20 +49,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9810-common/proprietary/vendor/firmware/HFD.model.new:$(TARGET_COPY_OUT_VENDOR)/firmware/HFD.model.new \
     vendor/samsung/exynos9810-common/proprietary/vendor/firmware/HFD_PP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/HFD_PP.bin \
     vendor/samsung/exynos9810-common/proprietary/vendor/firmware/HFD_tracker.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/HFD_tracker.bin \
-    vendor/samsung/exynos9810-common/proprietary/vendor/firmware/bcm4361B2_murata.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4361B2_murata.hcd \
-    vendor/samsung/exynos9810-common/proprietary/vendor/firmware/bcm4361B2_semco.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4361B2_semco.hcd \
-    vendor/samsung/exynos9810-common/proprietary/vendor/firmware/bcmdhd_clm.blob:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_clm.blob \
-    vendor/samsung/exynos9810-common/proprietary/vendor/firmware/bcmdhd_mfg.bin_b0:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_mfg.bin_b0 \
-    vendor/samsung/exynos9810-common/proprietary/vendor/firmware/bcmdhd_mfg.bin_b2:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_mfg.bin_b2 \
-    vendor/samsung/exynos9810-common/proprietary/vendor/firmware/bcmdhd_mon.bin_b2:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_mon.bin_b2 \
-    vendor/samsung/exynos9810-common/proprietary/vendor/firmware/bcmdhd_sta.bin_b0:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_sta.bin_b0 \
-    vendor/samsung/exynos9810-common/proprietary/vendor/firmware/bcmdhd_sta.bin_b2:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd_sta.bin_b2 \
     vendor/samsung/exynos9810-common/proprietary/vendor/firmware/cs47l92-dsp1-trace.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs47l92-dsp1-trace.wmfw \
     vendor/samsung/exynos9810-common/proprietary/vendor/firmware/dsm.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dsm.bin \
     vendor/samsung/exynos9810-common/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
-    vendor/samsung/exynos9810-common/proprietary/vendor/firmware/nvram.txt_murata_r041_b2:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_murata_r041_b2 \
-    vendor/samsung/exynos9810-common/proprietary/vendor/firmware/nvram.txt_r02a_b2:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_r02a_b2 \
-    vendor/samsung/exynos9810-common/proprietary/vendor/firmware/nvram.txt_r02b_b2:$(TARGET_COPY_OUT_VENDOR)/firmware/nvram.txt_r02b_b2 \
     vendor/samsung/exynos9810-common/proprietary/vendor/firmware/score/camera1/score_kc1_dmb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/score/camera1/score_kc1_dmb.bin \
     vendor/samsung/exynos9810-common/proprietary/vendor/firmware/score/camera1/score_kc1_pmw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/score/camera1/score_kc1_pmw.bin \
     vendor/samsung/exynos9810-common/proprietary/vendor/firmware/score/camera1/score_kc2_dmb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/score/camera1/score_kc2_dmb.bin \
@@ -101,7 +89,6 @@ PRODUCT_PACKAGES += \
     camera.device@3.3-impl.exynos9810 \
     camera.device@3.5-impl.exynos9810 \
     gatekeeper.exynos9810 \
-    power.exynos9810 \
     libIDDQD_core \
     libIDDQD_interface \
     libMcClient \
