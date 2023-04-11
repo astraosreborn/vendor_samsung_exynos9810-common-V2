@@ -590,26 +590,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libwrappergps",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libwrappergps.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libwrappergps.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "sensors.grip",
 	owner: "samsung",
 	strip: {
@@ -930,42 +910,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.gnss@2.0-impl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "gps.default",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/gps.default.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "keystore.mdfpp",
 	owner: "samsung",
 	strip: {
@@ -974,24 +918,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/keystore.mdfpp.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.gnss@2.0-impl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -1122,23 +1048,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.gnss@2.0",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.samsung.hardware.radio.bridge@2.0",
 	owner: "samsung",
 	strip: {
@@ -1249,48 +1158,9 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "gpsd",
-	owner: "samsung",
-	srcs: ["proprietary/vendor/bin/hw/gpsd"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "lhd",
-	owner: "samsung",
-	srcs: ["proprietary/vendor/bin/hw/lhd"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "rild",
 	owner: "samsung",
 	srcs: ["proprietary/vendor/bin/hw/rild"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.samsung.hardware.gnss@2.0-service",
-	owner: "samsung",
-	srcs: ["proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service"],
 	check_elf_files: false,
 	strip: {
 		none: true,

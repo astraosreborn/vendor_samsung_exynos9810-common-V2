@@ -32,18 +32,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9810-common/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000062.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000062.tlbin \
     vendor/samsung/exynos9810-common/proprietary/vendor/app/mcRegistry/fffffffff0000000000000000000001b.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/fffffffff0000000000000000000001b.tlbin \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    vendor/samsung/exynos9810-common/proprietary/vendor/etc/gnss/gps.cer:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cer \
-    vendor/samsung/exynos9810-common/proprietary/vendor/etc/gnss/gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
-    vendor/samsung/exynos9810-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service.rc \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
-    vendor/samsung/exynos9810-common/proprietary/vendor/etc/sensor/lhd.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensor/lhd.conf \
-    vendor/samsung/exynos9810-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/exynos9810-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/exynos9810-common/proprietary/vendor/firmware/HFD.cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/HFD.cfg.bin \
     vendor/samsung/exynos9810-common/proprietary/vendor/firmware/HFD.model.new:$(TARGET_COPY_OUT_VENDOR)/firmware/HFD.model.new \
@@ -111,7 +106,6 @@ PRODUCT_PACKAGES += \
     libuniplugin \
     libvkmanager_vendor \
     libvxu \
-    libwrappergps \
     sensors.grip \
     sensors.sensorhub \
     thermal.exynos9810 \
@@ -128,10 +122,7 @@ PRODUCT_PACKAGES += \
     libhfd \
     libaudioroute.exynos9810 \
     libtinyalsa.exynos9810 \
-    android.hardware.gnss@2.0-impl \
-    gps.default \
     keystore.mdfpp \
-    vendor.samsung.hardware.gnss@2.0-impl \
     libbt-vendor.exynos9810 \
     libengmode_client \
     libkeymaster2_mdfpp \
@@ -139,7 +130,6 @@ PRODUCT_PACKAGES += \
     libsec-ril \
     libsec-ril-dsds \
     libskeymaster3device \
-    vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.radio.bridge@2.0 \
     vendor.samsung.hardware.radio.channel@2.0 \
     vendor.samsung.hardware.radio@2.0 \
@@ -147,10 +137,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.widevine.keyprovisioning@1.0 \
     cbd \
     android.hardware.drm@1.2-service.widevine \
-    gpsd \
-    lhd \
     rild \
-    vendor.samsung.hardware.gnss@2.0-service \
     mcDriverDaemon \
     vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service
 
