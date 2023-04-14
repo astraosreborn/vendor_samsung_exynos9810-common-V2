@@ -128,27 +128,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "gatekeeper.exynos9810",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/gatekeeper.exynos9810.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/gatekeeper.exynos9810.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "power.exynos9810",
 	owner: "samsung",
 	strip: {
@@ -201,26 +180,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libIDDQD_interface.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libMcClient",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libMcClient.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libMcClient.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -987,24 +946,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "keystore.mdfpp",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/keystore.mdfpp.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.samsung.hardware.gnss@2.0-impl",
 	owner: "samsung",
 	strip: {
@@ -1058,23 +999,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libkeymaster2_mdfpp",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libkeymaster2_mdfpp.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libril-samsung",
 	owner: "samsung",
 	strip: {
@@ -1117,23 +1041,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsec-ril-dsds.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libskeymaster3device",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libskeymaster3device.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -1317,18 +1224,6 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "mcDriverDaemon",
-	owner: "samsung",
-	srcs: ["proprietary/vendor/bin/mcDriverDaemon"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
 	prefer: true,
 	soc_specific: true,
 }
