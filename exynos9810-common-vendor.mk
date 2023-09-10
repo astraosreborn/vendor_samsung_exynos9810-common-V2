@@ -100,7 +100,6 @@ PRODUCT_PACKAGES += \
     camera.device@1.0-impl.exynos9810 \
     camera.device@3.3-impl.exynos9810 \
     camera.device@3.5-impl.exynos9810 \
-    gatekeeper.exynos9810 \
     power.exynos9810 \
     libIDDQD_core \
     libIDDQD_interface \
@@ -114,7 +113,6 @@ PRODUCT_PACKAGES += \
     libgf_in_system_lib \
     libiva_android_hal \
     libqfp_sensortest \
-    libsecaudioinfo \
     libsecnativefeature \
     libsecril-client.exynos9810 \
     libsemnativecarrierfeature \
@@ -128,30 +126,17 @@ PRODUCT_PACKAGES += \
     sensors.grip \
     sensors.sensorhub \
     thermal.exynos9810 \
-    libSamsungPostProcessConvertor \
-    lib_SoundAlive_SRC384_ver320 \
-    lib_soundaliveresampler \
-    libaboxpcmdump \
-    libalsautils_sec \
-    libaudio-ril \
-    libaudiodebugfs \
     libcnn \
-    libcodecdspdump \
     libdatamod \
     libhfd \
-    libaudioroute.exynos9810 \
-    libtinyalsa.exynos9810 \
     android.hardware.gnss@2.0-impl \
     gps.default \
-    keystore.mdfpp \
     vendor.samsung.hardware.gnss@2.0-impl \
     libbt-vendor.exynos9810 \
     libengmode_client \
-    libkeymaster2_mdfpp \
     libril-samsung \
     libsec-ril \
     libsec-ril-dsds \
-    libskeymaster3device \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.radio.bridge@2.0 \
     vendor.samsung.hardware.radio.channel@2.0 \
@@ -164,7 +149,6 @@ PRODUCT_PACKAGES += \
     lhd \
     rild \
     vendor.samsung.hardware.gnss@2.0-service \
-    mcDriverDaemon \
     vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service
 
 # Dolby Atmos
